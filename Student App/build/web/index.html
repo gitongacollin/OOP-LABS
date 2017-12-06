@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Student Application</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+    <h3>Student App </h3>
+    <form name="student_app" action="Save" method="POST">
+        Student id:*
+        <input type="number" name="id" placeholder="Enter your student number" required=""/>
+        <br><br>
+        First Name:*
+        <input type="text" name="f_name" placeholder="Enter your First name" required=""/>
+        <br><br>
+        Last Name:*
+        <input type="text" name="l_name" placeholder="Enter your Last name" required=""/>
+        <br><br>
+        Gender:*
+        <input type="radio" name="gender" value="male" checked required>Male
+        <input type="radio" name="gender" value="female" required>Female
+        <br><br>
+        Degree Programme:*
+        <select name="Programme" required>
+			<option value="">--Select Programme--</option>
+			<option value="BBIT">BBIT</option>
+			<option value="ICS">ICS</option>
+			<option value="BCOM">BCOM</option>
+			<option value="IS">IS</option>
+	</select>
+        <br><br>
+        <input type="submit" name="submit_button" value="Register">
+	<input type="reset" name="reset" value="clear">
+    </form>
+    </body>
+</html>
